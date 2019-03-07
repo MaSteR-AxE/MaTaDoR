@@ -36,13 +36,13 @@ install() {
 logo_play() {
     declare -A txtlogo
     seconds="0.010"
-    txtlogo[1]="####    ####"
-	txtlogo[2]="  # #  # #  "
-	txtlogo[3]="   # ** #   "
-	txtlogo[4]="    #  #    "
-	txtlogo[5]="   # ** #   "
-	txtlogo[6]="  # #  # #  "
-	txtlogo[7]="####    ####" 
+    txtlogo[1]="    ######     ####    ####   ############ "
+	txtlogo[2]="     # #         # #  # #     ##           "
+	txtlogo[3]="    # # #         # ** #      ##           "
+	txtlogo[4]="   # # # #         #  #       ###########  "
+	txtlogo[5]="  # #   # #       # ** #      ##           "
+	txtlogo[6]=" # #     # #     # #  # #     ##           "
+	txtlogo[7]="####     ####  ####    ####   ############ " 
     printf "\033[38;5;600m\t"
     for i in ${!txtlogo[@]}; do
         for x in `seq 0 ${#txtlogo[$i]}`; do
